@@ -1,0 +1,86 @@
+\documentclass[fleqn]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{mathexam}
+\usepackage{verbatim}
+
+\ExamClass{CSCE 240}
+\ExamName{Homework 1}
+\ExamHead{Due: Wed 11 Sep 2019}
+
+\let
+\ds
+\displaystyle
+
+\begin{document}
+\ExamInstrBox {
+  You shall submit a zipped, \textbf{and only zipped}, archive of your homework
+  directory, hw1. The directory shall contain, at a minimum, the file
+  \texttt{base\_decomposer.cc}. Your submission file must be named hw1.zip. \\
+
+  I will use my own makefile to make your \texttt{base\_decomposer.cc} file. Do
+  not use a header for this assignment. My grader will not look for one.
+}
+\section*{Introduction}
+%
+The most common representation of quantities in base-10 is the power series
+positional counting system. In this system, 123,456 represents the power series \\
+%
+\begin{center}
+  $1\times10^5+2\times10^4+3\times10^3+4\times10^2+5\times10^1+6\times10^0$
+\end{center}
+\begin{center}
+  \textbf{OR}
+\end{center}
+\begin{center}
+  $100000+20000+3000+400+50+6$
+\end{center}
+The same value presented in negative magnitude -123,456, might be
+\begin{center}
+  $-(100000+20000+3000+400+50+6)$
+\end{center}
+%
+%
+\section*{Description}
+Develop a small application for me which will produce output in the second
+form--that is:
+\begin{center}
+  $100000+20000+3000+400+50+6$
+\end{center}
+\begin{center}
+  \textbf{OR}
+\end{center}
+\begin{center}
+  $-(100000+20000+3000+400+50+6)$
+\end{center}
+%
+Without prompting, read input from STDIN as a signed integer value. Extract each
+place of the integer and print the conversion to STDOUT. \\
+%
+I provided you with a test file to test your code. You should ensure that your
+code satisfies the tester's requirements. It is the tool I will use to grade
+your submissions. I will only change the input and expected values. \\
+%
+To utilize the tester, you will need access to a python3 interpreter. The tester
+can be called as follows, assuming that \texttt{python3} is in your path and
+that your present working directory is \texttt{../hw1}
+  \begin{verbatim}
+python3 test_decomposer 1
+python3 test_decomposer 2
+  \end{verbatim}
+%
+%
+\section*{Point Awards}
+Test 1 is worth 2 of 3 points and Test 2 is worth 1 of 3 points.
+\vspace{1.0em}
+%
+I have provided you a make file. You should definitely read the
+makefile and I would encourage you to read the python tester.\\
+\\
+%
+Late assignments will lose 25\% per day late, with no assignment begin accepted
+after 4 days (100\% reduction in points).\\
+\\
+%
+Check your syllabus for the breakdown of grading.
+\end{document}
+
