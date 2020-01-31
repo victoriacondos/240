@@ -1,0 +1,58 @@
+\documentclass[fleqn]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{mathexam}
+
+\ExamClass{CSCE 240}
+\ExamName{Homework 2}
+\ExamHead{Due: Wednesday, 25 Sept 2019}
+
+\let
+\ds
+\displaystyle
+
+\begin{document}
+\ExamInstrBox {
+  You shall submit a zipped, \textbf{and only zipped}, archive of your homework
+  directory, \texttt{hw2.zip}. The directory shall contain, at a minimum, the
+  files \texttt{comp\_geo.h} and \texttt{comp\_geo.cc} in a directory named
+  \texttt{hw2}.
+
+  I will use my own makefile to make your \texttt{comp\_geo.cc} file.
+}
+%
+I found a really great computational geometry library that stores circles and
+rectangle in a very particular way--by keeping up with the points representing
+each object. \\
+\\
+I require additional functionality for a project and am tasking you with the
+development of the library.  \\
+\\
+%
+I have included a couple tests demonstrating the interfaces. You should
+definitely extend these tests. I will. You will also find a comp\_geo header and
+source file. I provide those as an interface specification. \textbf{YOU} are
+responsible for files you edit.\\
+\\
+%
+The following functions should be implemented:
+\begin{itemize}
+  \item \texttt{CalcCircumference} 1.25 points
+  \item \texttt{CalcCircleArea} 1.25 points
+  \item \texttt{CalcPerimeter} 1.25 points
+  \item \texttt{CalcRectangleArea} 1.25 points
+  \item \texttt{CalcDistanceSquared} 1 point
+  \item \texttt{CalcDistance} 1 point
+\end{itemize}
+The functions' descriptions can be found by reading the header. \\
+\\
+%
+Late assignments will lose 25\% per day late, with no assignment begin accepted
+after 4 days (100\% reduction in points). \\
+\\
+%
+You will receive points for each test passed and one point for successful
+compilation against the \texttt{test.cc} file for a total of eight (8) points.
+Check your syllabus for further breakdown of grading.
+\end{document}
+
+
